@@ -20,9 +20,12 @@ To provide a quick way to plan your meals without the need to spend cognitive re
 
 ## How it works
 There are some "meal types" (think of them as *curses*, or *meal classes*) stored in the first sheet of the Excel file, each composed of a combination of ingredient types (ingredients and their type are stored in the second sheet of the Excel file).
+
 At startup, the random seed is set to the current week number of the year. Season (which is just *hot* or *cold*) is also initialised based on week number.
 The first meal type of the week is picked at random, and then for all the remaining 13 meals, a new meal type is randomly selected avoiding repeating the same type twice in a row, and avoiding repeating the special type "pizza" more than once a week.
+
 The actual meal is composed by picking ingredients at random based on the types requested by the picked meal type and considering some constraints, e.g. the season. To avoid repeating the same meal twice, some of its ingredients are removed from the available ingredients for the week.
+
 The result is then printed in the console or on the Gui.
 
 ## How to use
