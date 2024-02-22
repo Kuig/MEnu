@@ -1,6 +1,6 @@
 # MEnu
 
-A weekly menu planner (coming soon, just let me finish the readme first)
+A weekly menu planner.
 
 ## Purpose
 
@@ -44,8 +44,8 @@ The second sheet of the Excel file contains a list of ingredients. They have the
 - ingredient type (single char);
 - preferred season (-1: cold weather, 0: all year, 1: hot weather);
 - preferred moment of the day (-1: lunch, 0: no preference, 1, dinner);
-- Liked by person 0;
-- Liked by person 1.
+- liked by person 0;
+- liked by person 1.
 
 The last sheet contains some settings such as the names of persons 0 and 1, and a word that the user may want to show in the title bar of the GUI version.
 
