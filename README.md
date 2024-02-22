@@ -26,9 +26,24 @@ The first meal type of the week is picked at random, and then for all the remain
 
 The actual meal is composed by picking ingredients at random based on the types requested by the picked meal type and considering some constraints, e.g. the season. To avoid repeating the same meal twice, some of its ingredients are removed from the available ingredients for the week.
 
-The result is then printed in the console or on the Gui.
+The result is then printed in the console or on the GUI.
 
 ## How to use
+First, you need to populate the Excel file with your favourite dishes/ingredients, then you just have to run the console version (that has default parameters) or the GUI version, which has quite self-explanatory parameters, so let's just dive into how the Excel file customization works.
+
+The first sheet of the Excel file contains some meal types. A meal type consists of a collection of ingredient types (encoded as a string of single-char tokens) that need to be combined to produce the dish (sorry, one dish per meal).
+
+You can use existing meal types, or create new ones. The ingredient type tokens can also be chosen at wish, they just have to match the tokens used in the second sheet of the Excel file (more on this later). Nevertheless consider that some tokens (such as t, p, u, z) have a special meaning: once an ingredient belonging to these types is consumed, it is removed from the available ingredients to avoid eating it again in the week.
+
+The second sheet of the Excel file contains a list of ingredients. They have the following properties:
+- name;
+- ingredient type (single char);
+- preferred season (-1: cold weather, 0: all year, 1: hot weather);
+- preferred moment of the day (-1: lunch, 0: no preference, 1, dinner);
+- Liked by person 1;
+- Liked by person 2.
+
+The last sheet contains some settings such as the names of persons 1 and 2, and a word that the user may want to show in the title bar of the GUI version.
 
 ## Hackability
 
