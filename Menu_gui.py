@@ -18,6 +18,9 @@ _tabPady = 20
 _wrapLen = 80
 _boldFont = 'Arial 9 bold'
 
+# Init dataframes
+[me.portate, me.piatti, me.settings] = me.loadData(dbFile = 'Menu.xlsx')
+
 # GUI mainproperties
 window = tk.Tk()
 window.geometry("750x330")

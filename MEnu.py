@@ -12,7 +12,7 @@ __version__ = "1.1.0"
 
 ### MAIN VARIABLES ###
 
-settings = pd.DataFrame({'Name_0':['Alice'],'Name_1':['Bob'], 'Dedication':['Potato']})
+settings = pd.DataFrame({'Name_0':['Name_0'],'Name_1':['Name_1'], 'Dedication':['Default']})
 
 portate = pd.DataFrame({'Nome':[],'Contenuto':[]})
 
